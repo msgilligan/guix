@@ -2526,6 +2526,21 @@ ngx.say(stdout)
                                                         #$(local-file "index.lua"))))))))))))))
 @end lisp
 
+@node Setting up OpenJDK
+@section Setting up OpenJDK
+@cindex openjdk
+
+To install that latest version of OpenJDK with Guix, you would typically use:
+
+@example
+guix install openjdk:jdk
+@end example
+
+Including the @code{:jdk} output is necessary if you are like most
+developers and want @code{javac} to be installed. It is a common mistake
+to omit @code{:jdk} and then receive an error from a build tool.
+
+
 @node Music Server with Bluetooth Audio
 @section Music Server with Bluetooth Audio
 @cindex mpd
